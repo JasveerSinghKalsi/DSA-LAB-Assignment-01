@@ -132,15 +132,16 @@ void insert()
 	if (n >= MAX)
 	{
 		printf("\n List is Full:::");
+		return;
+	}
+	else if (pos > n || pos < 0)
+	{
+		printf("\n Invalid Location:::");
+		return;
 	}
 	else
-	if (pos > n)
 	{
-		printf("\n:::Invalid Location:::");
-	}
-	else
-	{
-		for (i = MAX - 1; i >= pos - 1; i--)
+		for (i = n; i >= pos; i--)
 		{
 			b[i + 1] = b[i]; // Shift the elements to the right
 		}
@@ -149,7 +150,7 @@ void insert()
 		b[pos] = p; // Insert the element at the specified position
 		n++;
 	}
-	printf("\nThe list after insertion: ");
+	printf("\n The list after insertion: ");
 	display();
 }
 
