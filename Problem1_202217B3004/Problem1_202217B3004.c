@@ -53,7 +53,7 @@ void main()
 		printf("\nDo u want to continue: (y/n)");
 		scanf("%c", &g);
 	}
-	// The program is intended to run till we provide inputs other that ‘y’ or ‘Y’
+	// The program is intended to run till we provide inputs other ‘y’ or ‘Y’
 	while (g == 'y' || g == 'Y');
 	getchar();
 }
