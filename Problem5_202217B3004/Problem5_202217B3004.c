@@ -38,7 +38,7 @@ void main()
 			break;
 		case 3:
 			printf("\n Queue Elements are:\n");
-			if (front == rear)
+			if (count == 0)
 				printf("\n Queue is Empty");
 			else
 			{
