@@ -48,7 +48,7 @@ int hashFunction(HashMap *mp, char *key)
       {
             // sum = sum + (ascii value of char * (primeNumber ^ x))...where x = 1, 2, 3....n
             sum = ((sum % mp->capacity) + (((int)key[i]) * factor) % mp->capacity) % mp->capacity;
-            // factor = factor * primenumber....(primenumber) ^ x
+            // factor = factor * primeNumber....(primeNumber) ^ x
             factor = ((factor % __INT16_MAX__) * (31 % __INT16_MAX__)) % __INT16_MAX__;
       }
       bucketIndex = sum;
